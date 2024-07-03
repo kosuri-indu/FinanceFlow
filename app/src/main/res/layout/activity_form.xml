@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <!-- RelativeLayout to position Toolbar and LinearLayout properly -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <!-- Toolbar for Dashboard -->
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    android:elevation="4dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                    app:title="Add Expense"
+                    app:titleTextColor="@android:color/white"
+                    android:backgroundTint="@color/deepblue"
+                    app:navigationIcon="?attr/homeAsUpIndicator"
+                    app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+                <!-- LinearLayout for the form content, positioned below the Toolbar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_below="@id/toolbar">
+
+                        <!-- Title -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Title"
+                            android:textColor="@color/deepblue"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp"/>
+
+                        <EditText
+                            android:id="@+id/titleInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Samsung Level Earphones"
+                            android:padding="16dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/tight_background"/>
+
+                        <!-- Amount -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Amount"
+                            android:textColor="@color/deepblue"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp"/>
+
+                        <EditText
+                            android:id="@+id/amountInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="₹2,390"
+                            android:inputType="numberDecimal"
+                            android:padding="16dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/tight_background"/>
+
+                        <!-- Transaction type -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Transaction type"
+                            android:textColor="@color/deepblue"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp"/>
+
+                        <Spinner
+                            android:id="@+id/typeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:padding="16dp"
+                            android:entries="@array/expense_types"
+                            android:background="@drawable/tight_background"/>
+
+                        <!-- Tag -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tag"
+                            android:textColor="@color/deepblue"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp"/>
+
+                        <EditText
+                            android:id="@+id/tagInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Personal Spendings"
+                            android:padding="16dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/tight_background"/>
+
+                        <!-- When -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="When"
+                            android:textColor="@color/deepblue"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp"/>
+
+                        <EditText
+                            android:id="@+id/whenInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="08/06/2024"
+                            android:padding="16dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/tight_background"/>
+
+                        <!-- Add Button -->
+                        <Button
+                            android:id="@+id/addButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Expense"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/deepblue"
+                            android:layout_marginTop="16dp"/>
+                </LinearLayout>
+        </RelativeLayout>
+</FrameLayout>

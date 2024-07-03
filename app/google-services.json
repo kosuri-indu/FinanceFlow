@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "102269156951",
+    "firebase_url": "https://exp-version2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "exp-version2",
+    "storage_bucket": "exp-version2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102269156951:android:fac16dc271e7daa12c6d12",
+        "android_client_info": {
+          "package_name": "com.example.exp_version2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq5OOMHHx0T0rInigzqERRfEUL_AnqAKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
